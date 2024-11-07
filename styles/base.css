@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+body {
+    display: grid; 
+    grid-template: auto 1fr auto  / auto auto;
+    height: 100vh;
+    background-color: beige;
+    max-width: 1000px;
+    margin: auto auto;
+    border: solid;
+    
+}
+header{
+    background-color: rgb(220, 237, 245);
+    padding: 2rem;
+    grid-column: 1 / 4;
+}
+header h1{
+    text-align: center;
+}
+nav {
+    background-color: bisque;
+    display: flex;
+    padding: 1rem 5rem;
+    justify-content: space-between;
+    grid-column: 1 / 4;
+}
+nav a{
+    display: block;
+    color: black;
+	text-align: center;
+	text-decoration: none;
+}
+nav a:hover {
+	text-decoration:overline;
+}
+main{
+    padding: 2rem;
+    grid-column: 1 / 2;
+    font-family: "Roboto Serif", serif;
+}
+aside{
+    background-color: bisque;
+    grid-column: 2 / 4;
+    padding: 3rem;
+}
+aside ul{
+    padding: 0;
+}
+aside ul a{
+    color: black;
+}
+footer{
+    background-color: rgb(220, 237, 245);
+    grid-column: 1 / 4;
+    text-align: center;
+}
+section{
+    display: flex;
+    padding:1rem;
+}
+section img{
+    max-width: 250px;
+}
+section p{
+    padding: 1rem;
+}
