@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Websit about the City of Jerusalem">
+    <meta name="author" content="Bradley Gardner">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <title>WDD 131 - Jerusalem</title>
+</head>
+
+<body>
+    <header>
+        <h1>Jerusalem</h1>
+    </header>
+    <picture>
+        <source media="(min-width: 1000px)" srcset="images/jerusalem-lg.webp">
+        <img src="images/jerusalem-sm.webp" alt="Jerusalem City">
+    </picture>
+    <main>
+        <div class="information_box left" id="data">
+            <h2>Data</h2>
+            <ul>
+                <li><b>Country</b>: Isreal</li>
+                <li><b>Founded</b>: 1010 BCE</li>
+                <li><b>Area</b>: 50 sq mi</li>
+                <li><b>Population</b>: 973,960</li>
+                <li><b>Time Zone</b>: UTC+2</li>
+                <li><b>Languages</b>: Hebrew, Arabic</li>
+            </ul>
+
+        </div>
+        <div class="information_box right" id="weather">
+            <h2>Weather</h2>
+            <img class="icon" src="images/sun_icon.svg">
+            <ul>
+                <li><b>Temperature</b>: 10 &deg;C</li>
+                <li><b>Conditions</b>: Sunny</li>
+                <li><b>Wind</b>: 7 km/h</li>
+                <li id="wind_chill"><b>Wind Chill</b>: </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <h4>&copy; <span id="current_year"></span> Bradley Gardner - Utah</h4>
+        <p id="last_modified"></p>
+    </footer>
+</body>
+
+</html>
