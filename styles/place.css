@@ -10,7 +10,7 @@ body {
     height: 100vh;
     background-color: var(--background);
     margin: auto auto;
-
+    font-family: Roboto, helvetica, sans-serif;
 }
 
 header {
