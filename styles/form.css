@@ -1,0 +1,70 @@
+body {
+    background-color: beige;
+    max-width: 1000px;
+    margin: auto auto;
+    
+}
+header{
+    background-color: rgb(220, 237, 245);
+    padding: 2rem;
+    grid-column: 1 / 4;
+}
+h1{
+    text-align: center;
+}
+main{
+    padding: 2rem;
+    grid-column: 1 / 2;
+    font-family: "Mona Sans", sans-serif;
+}
+
+footer{
+    background-color: rgb(220, 237, 245);
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
+.form1 label{
+    display: block;
+    color: #9c2c13;
+    font-size: .9rem;
+}
+.form1 span{
+    padding-top: 1rem;
+    color: #4e515c;
+    font-size: .9rem;
+}
+.form1 input[type="text"],
+.form1 input[type="date"],
+.form1 select,
+.form1 textarea
+{
+    box-sizing: border-box;
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    margin-top: .3rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+}
+ .form1 textarea{
+    min-height: 125px;
+ }
+.form1 input[type="submit"]{
+    border: none;
+    background-color: #6f200e;
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 2rem;
+    box-shadow: 1px 1px 4px #999;
+}
+.labelHead{
+    padding-top: 1rem;
+    padding-bottom: .3rem;
+}

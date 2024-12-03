@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Bradley Gardner</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Bradley Gardner - Forms" />
+    <meta name="author" content="Bradley Gardner" />
+    <script src="scripts/form.js" defer></script>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>WDD 131: Product Review - Bradley Gardner</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="form1">
+            <label>Product Name<select name="pName" , id="pName" , required>
+                    <option value="" disabled selected>Select a Product</option>
+                </select></label>
+            <label class="labelHead">Rating</label>
+            
+            <label><input id="1star" type="radio" name="rating" value="1" required>&star;</label>
+            <label><input id="2star" type="radio" name="rating" value="2" required>&star;&star;</label>
+            <label><input id="3star" type="radio" name="rating" value="3" required>&star;&star;&star;</label>
+            <label><input id="4star" type="radio" name="rating" value="4" required>&star;&star;&star;&star;</label>
+            <label><input id="5star" type="radio" name="rating" value="5"
+                    required>&star;&star;&star;&star;&star;</label>
+
+            <label class="labelHead">Date Installed<input type="date" , id="dateInstalled" , name="dateInstalled" required></label>
+
+            <label class="labelHead">Useful Features - Check all that apply</label>
+            <label>Feature 1<input type="checkbox" , id="feature1" , name="feature1" value="yes"></label>
+            <label>Feature 2<input type="checkbox" , id="feature2" , name="feature2" value="yes"></label>
+            <label>Feature 3<input type="checkbox" , id="feature3" , name="feature3" value="yes"></label>
+            <label>Feature 4<input type="checkbox" , id="feature4" , name="feature4" value="yes"></label>
+
+            <label class="labelHead">Review <span class="optional">Optional </span></label>
+            <textarea id="review" name="review"></textarea>
+            <label class="labelHead">Your Name <span class="optional">Optional </span><input type="text" id="username" name="username"></label>
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <h4>&copy; <span id="current_year"></span> Bradley Gardner - Utah</h4>
+        <p id="last_modified"></p>
+    </footer>
+</body>
+
+</html>
