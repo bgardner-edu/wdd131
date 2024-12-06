@@ -1,0 +1,84 @@
+:root {
+    --primary_yellow: #FFCC00;
+    --primary_blue: #3399FF;
+    --primary_gray: #333333;
+    --accent_orange: #FF6600;
+    --accent_white: #FFFFFF;
+    --accent_gray: #D3D3D3;
+}
+
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body {
+    max-width: 1000px;
+    margin: auto auto;
+    border: solid;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+h1, h2{
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    padding: 2rem;
+}
+
+header h1 {
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+}
+
+footer {
+    text-align: center;
+}
+
+section {
+    padding: 1rem;
+}
+
+section p {
+    padding: 1rem;
+}
+
+#yellow {
+    background-color: var(--primary_yellow);
+}
+
+#blue {
+    background-color: var(--primary_blue);
+}
+
+#p_gray {
+    background-color: var(--primary_gray);
+    color: var(--accent_white);
+}
+
+#orange {
+    background-color: var(--accent_orange);
+}
+
+#white {
+    background-color: var(--accent_white);
+}
+
+#a_gray {
+    background-color: var(--accent_gray);
+}
