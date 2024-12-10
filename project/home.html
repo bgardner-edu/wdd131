@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JK Electric</title>
+    <title>JK Electric - Home</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Bradley Gardner - Final Project" />
     <meta name="author" content="Bradley Gardner" />
     <script src="/project/scripts/index.js" defer></script>
@@ -18,34 +18,48 @@
 
 <body>
     <header>
-        <img src="images/logo.webp" alt="JK electric logo">
-        <h1>JK Electric</h1>
+        <div class="logo_with_text">
+            <img src="images/logo.webp" alt="JK electric logo" loading="lazy" width="75px" height="75px">
+            <h1>JK Electric</h1>
+            <a id="menu" href="#"></a>
+        </div>
         <nav>
-            <a href="/project/index.html">Home</a>
+            <a href="/project/home.html">Home</a>
             <a href="/project/about.html">About Us</a>
             <a href="/project/quote.html">Request a Quote</a>
         </nav>
     </header>
     <main>
         <h2>Experienced electricians delivering quality service for residential, commercial, and industrial needs</h2>
-        <hr />
-        <section class="card">
+        <section>
             <h3>Why hire an electrician?</h3>
-            <img src="/project/images/electrical2.webp" alt="person doing electrical">
+
             <p>Electrical work is complex and can be dangerous if done incorrectly. A professional electrician has the
                 knowledge and tools to ensure safety for you, your family, and your property. Avoiding accidents like
                 electrical shocks or fires starts with proper expertise.</p>
+            <p>JK Electric is a locally owned company that is committed to keeping you and your family safe and
+                providing high quality electrical work.</p>
+            <img src="/project/images/electrical2.webp" alt="person doing electrical" loading="lazy" width="300px">
         </section>
-        <section class="card">
+        <section>
+            <img src="/project/images/electrical1.webp" alt="person doing electrical" loading="lazy" width="300px">
             <h3>What we can do!</h3>
-            <img src="/project/images/electrical1.webp" alt="person doing electrical">
+            <h4>Residential</h4>
             <ul>
-                <li></li>
+                <li>New Construction</li>
+                <li>Remodels</li>
+                <li>Electrical inspections</li>
+                <li>Small Repairs on lights and outlets</li>
+            </ul>
+            <h4>Commercial and Industrial</h4>
+            <ul>
+                <li>New Construction</li>
+                <li>Device installations</li>
+                <li>Repairs and Inspections</li>
             </ul>
         </section>
     </main>
     <aside>
-        <img>
         <h3>Contact us</h3>
         <ul>
             <li>Email: jkelectric2@msn.com</li>
@@ -53,7 +67,7 @@
             <li>Speak with an electrician right away at: 801-123-4567</li>
         </ul>
         <h4>OR</h4>
-        <form>
+        <form method="get" action="thankyou.html" class="cuf">
             <label for="name">Name: <input id="name" type="text" required></label>
             <label for="email">Email: <input id="email" type="email" requred></label>
             <label for="question">Question: <input id="question" type="text"></label>

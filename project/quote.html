@@ -1,42 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JK Electric</title>
-    <script src="scripts/index.js" defer></script>
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>JK Electric - Quote</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Bradley Gardner - Final Project" />
+    <meta name="author" content="Bradley Gardner" />
+    <script src="/project/scripts/index.js" defer></script>
+    <link rel="stylesheet" href="/project/styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <img src="images/logo.webp" alt="JK electric logo">
-        <h1>Request a Quote</h1>
-        <div>
-            <nav>
-                <a href="/project/index.html">Home</a>
-                <a href="/project/about.html">About Us</a>
-                <a href="/project/quote.html">Request a Quote</a>
-            </nav>
+        <div class="logo_with_text">
+            <img src="images/logo.webp" alt="JK electric logo" loading="lazy" width="75px" height="75px">
+            <h1>JK Electric</h1>
+            <a id="menu" href="#"></a>
         </div>
+        <nav>
+            <a href="/project/home.html">Home</a>
+            <a href="/project/about.html">About Us</a>
+            <a href="/project/quote.html">Request a Quote</a>
+        </nav>
     </header>
     <main>
+        <h2>Quotes</h2>
         <section>
-            <img src="electrical1" alt="person doing electrical">
-            <p>Some Text about why hiring an electrician is a smart idea. </p>
+            <h3>Request a Quote</h3>
+            <form onsubmit="saveQuote(event)" class="rqf" id="new_quote">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label>First Name <input type="text" name="fname" required></label>
+                    <label>Last Name <input type="text" name="lname" required></label>
+                    <label>Phone <input type="tel" name="phone"></label>
+                    <label>Email <input type="email" name="email" required></label>
+                </fieldset>
+                <fieldset>
+                    <Legend>Project Information</Legend>
+                    <label>Type of Job<select name="type">
+                            <option value="">Please Select</option>
+                            <option value="Residential">Residential</option>
+                            <option value="Commercial">Commercial</option>
+                            <option value="Industrial">Industrial</option>
+                        </select></label>
+                    <Label>Anticipated Completion Date<input type="date" name="completeDate"></Label>
+                    <label for="description">Description</span></label>
+                    <textarea id="description" name="description"></textarea>
+                    <label>Do you have a permit?<input type="checkbox" name="permit" value="yes"></label>
+                </fieldset>
+                <input type="submit" value="Send Quote Request">
+            </form>
         </section>
         <section>
-            <img src="electrical2" alt="person doing electrical">
-            <p>Some Text about why hiring an electrician is a smart idea. </p>
+            <h3>Recent Quote Requests</h3>
+            <table id="quotes">
+                <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Date</th>
+                      <th>Description</th>
+                      <th>Permit</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+            </table>
         </section>
     </main>
+    <aside>
+        <h3>Contact us</h3>
+        <ul>
+            <li>Email: jkelectric2@msn.com</li>
+            <li>Office: 435-456-5789</li>
+            <li>Speak with an electrician right away at: 801-123-4567</li>
+        </ul>
+        <h4>OR</h4>
+        <form>
+            <label for="name">Name: <input id="name" type="text" required></label>
+            <label for="email">Email: <input id="email" type="email" requred></label>
+            <label for="question">Question: <input id="question" type="text"></label>
+            <input type="submit" value="Send">
+        </form>
+    </aside>
     <footer>
         <h4>&copy; <span id="current_year"></span> Bradley Gardner - Utah</h4>
         <p id="last_modified"></p>
     </footer>
 </body>
+
 </html>
