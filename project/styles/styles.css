@@ -1,0 +1,133 @@
+:root {
+    --primary_yellow: #FFCC00;
+    --primary_blue: #3399FF;
+    --primary_gray: #333333;
+    --accent_orange: #FF6600;
+    --accent_white: #FFFFFF;
+    --accent_gray: #D3D3D3;
+}
+
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body {
+    display: grid; 
+    grid-template: auto 1fr auto  / auto auto;
+    max-width: 1000px;
+    border: solid;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h1, h2{
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    padding: 2rem;
+    background-color: var(--primary_blue);
+    grid-column: 1 / 4;
+}
+header img{
+    width: 100px;
+}
+
+header h1 {
+    text-align: center;
+}
+nav {
+    display: flex;
+    padding: 1rem 5rem;
+    justify-content: space-between;
+    grid-column: 1 / 4;
+}
+nav a{
+    color: black;
+	text-align: center;
+	text-decoration: none;
+}
+nav a:hover {
+	text-decoration:overline;
+}
+main {
+    padding: 2rem;
+    background-color: var(--accent_gray);
+    grid-column: 1 / 2;
+}
+aside{
+    background-color: var(--accent_orange);
+    grid-column: 2 / 4;
+    padding: 3rem;
+}
+aside ul{
+    padding: 0;
+}
+aside ul a{
+    color: black;
+}
+img{
+    max-width: 100%;
+}
+section{
+    display: flex;
+    padding:1rem;
+}
+section img{
+    max-width: 250px;
+}
+section p{
+    padding: 1rem;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary_blue);
+    grid-column: 1 / 4;
+}
+
+section {
+    padding: 1rem;
+    border: 2px solid var(--primary_gray);
+    border-radius: 10px;
+    margin: .5rem;
+}
+
+section p {
+    padding: 1rem;
+}
+
+#yellow {
+    background-color: var(--primary_yellow);
+}
+
+#blue {
+    background-color: var(--primary_blue);
+}
+
+#p_gray {
+    background-color: var(--primary_gray);
+    color: var(--accent_white);
+}
+
+#orange {
+    background-color: var(--accent_orange);
+}
+
+#white {
+    background-color: var(--accent_white);
+}
+
+#a_gray {
+    background-color: var(--accent_gray);
+}
