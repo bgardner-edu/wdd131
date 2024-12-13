@@ -35,7 +35,6 @@
         <h2>Quotes</h2>
         <section>
             <h3>Request a Quote</h3>
-            <h4 id="quotes_list"></h4>
             <form onsubmit="saveQuote(event)" class="rqf" id="new_quote">
                 <fieldset>
                     <legend>Contact Information</legend>
@@ -47,11 +46,11 @@
                 <fieldset>
                     <Legend>Project Information</Legend>
                     <label>Type of Job<select name="type">
-                            <option value="">Please Select</option>
-                            <option value="Residential">Residential</option>
-                            <option value="Commercial">Commercial</option>
-                            <option value="Industrial">Industrial</option>
-                        </select></label>
+                        <option value="">Please Select</option>
+                        <option value="Residential">Residential</option>
+                        <option value="Commercial">Commercial</option>
+                        <option value="Industrial">Industrial</option>
+                    </select></label>
                     <Label>Anticipated Completion Date<input type="date" name="completeDate"></Label>
                     <label for="description">Description</label>
                     <textarea id="description" name="description"></textarea>
@@ -62,6 +61,7 @@
         </section>
         <section>
             <h3>Recent Quote Requests</h3>
+            <h4 id="quotes_list">You currently don't have any quote requests</h4>
             <table id="quotes">
                 <thead>
                     <tr>

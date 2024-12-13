@@ -92,7 +92,12 @@ nav a:hover {
 .quotes{
     display: block;
 }
-
+#quotes_list{
+    background-color: #FF6600;
+    padding: .4rem;
+    text-align: center;
+    border-radius: 5px;
+}
 table {
     display: block;
     border: 2px solid var(--primary_gray);
@@ -226,6 +231,7 @@ section p {
     .cuf {
         max-width: 300px;
     }
+
 }
 
 @media (min-width: 1200px) {

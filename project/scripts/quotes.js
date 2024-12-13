@@ -26,11 +26,12 @@ function displayQuotes() {
 
     tbody.innerHTML = "";
 
-    if(quotes.length == 0){
-        title.textContent = "You currently don't have any quote requests"
+    if(quotes.length > 0 ){
+        title.style.display = "none";
     }
+
     quotes.forEach(quote => {
-        let permit = quote['permit'] || "No"
+        let permit = quote['permit'] || "No";
         const row = tbody.insertRow();
         row.insertCell().textContent = `${quote['fname']} ${quote['lname']}`;
         row.insertCell().textContent = `${quote['phone']}`;
