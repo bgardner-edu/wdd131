@@ -34,6 +34,7 @@
         <h2>Quotes</h2>
         <section>
             <h3>Request a Quote</h3>
+            <h4 id="quotes_list"></h4>
             <form onsubmit="saveQuote(event)" class="rqf" id="new_quote">
                 <fieldset>
                     <legend>Contact Information</legend>
@@ -51,7 +52,7 @@
                             <option value="Industrial">Industrial</option>
                         </select></label>
                     <Label>Anticipated Completion Date<input type="date" name="completeDate"></Label>
-                    <label for="description">Description</span></label>
+                    <label for="description">Description</label>
                     <textarea id="description" name="description"></textarea>
                     <label>Do you have a permit?<input type="checkbox" name="permit" value="Yes"></label>
                 </fieldset>

@@ -22,9 +22,13 @@ function saveQuote() {
 function displayQuotes() {
     const table = document.getElementById("quotes");
     const tbody = table.getElementsByTagName("tbody")[0];
+    const title = document.getElementById("quotes_list");
 
     tbody.innerHTML = "";
 
+    if(quotes.length == 0){
+        title.textContent = "You currently don't have any quote requests"
+    }
     quotes.forEach(quote => {
         let permit = quote['permit'] || "No"
         const row = tbody.insertRow();
